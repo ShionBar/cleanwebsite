@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg{
+	background: url(image/scandinavian_living_room.webp);
+    /* background-size: cover; */
+	height: 150dvh;
+	width: 100%;
+	position: fixed;
+	background-size: cover; 
+    background-position: center;
+	filter: blur(5px);
+	z-index: -1;
+	/* opacity: 0.7;
+	filter: brightness(75%); */
+    margin: -100px auto;
+    padding: 0px;
+}
+
+section{
+    width: 100%;
+    height: 105vh;
+    min-height: 100px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo{
+    font-size: 35px;
+    color: lightgreen;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+section nav .logo span{
+    color: green;
+    text-decoration: underline;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover{
+    color: blue;
+}
+
+section nav .icons button{
+    color: green;
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px 15px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+section nav .icons button:hover{
+    color: blue;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover{
+    color: blue;
+}
+
+section .main .main_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section .main .main_content .main_text h1{
+    font-size: 90px;
+    line-height: 85px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, lightgreen,lightgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 60px;
+    left: 5%;
+}
+
+section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right, green,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: -100px;
+    left: 5%;
+    color: rgb(38, 38, 39);
+}
+
+section .main .main_content .main_image img{
+    width: 800px;
+    position: relative;
+    left: 20px;
+    top: -70px;
+}
+
+section .main .social_icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+}
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: blue;
+}
+
+
+/* about */
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+    /* padding-top: 250px; */
+}
+
+.about h1{
+    /* font-size: 60px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(110, 141, 188);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase; */
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,rgb(56, 71, 56),green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about h1 span{
+    background: linear-gradient(to right, lightgreen,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.about .about_main{
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.about .about_main .about_image{
+    display: flex;
+    margin-top: 50px;
+}
+
+.about .about_main .about_image .about_small_image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+
+.about .about_main .about_image .about_small_image img{
+    height: 92px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, lightgreen,green);
+    display: block;
+    border-radius: 6px;
+    padding: 5px 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.about .about_main .about_image .about_small_image img:hover{
+    opacity: 1;
+}
+
+.about .about_main .image_container{
+    padding: 10px;
+    display: flex;
+}
+
+.about .about_main .image_container img{
+    border: 2px solid lightgreen;
+    border-radius: 20px;
+    height: 430px;
+    padding: 30px;
+    box-shadow: 0 0 8px skyblue;
+}
+
+.about .about_main .about_text{
+    margin-top: 45px;
+}
+
+.about .about_main .about_text p{
+    background: linear-gradient(to right, rgb(38, 38, 39),rgb(38,38,39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 600px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid lightgreen;
+    border-radius: 20px;
+    box-shadow: 0 0 8px skyblue;
+}
+
+/* Mission and Vision Kasama sa About */
+.mission{
+    width: 100%;
+    height: 70vh;
+    padding: 25px 0;
+}
+
+.mission h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,lightgreen,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mission .box{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.mission .box .card{
+    width: 290px;
+    /* height: 340px; */
+    box-shadow: 0 0 8px skyblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #e4e4e4;
+    opacity: 80%;
+}
+
+.mission .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.mission .box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.mission .box .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+    color:rgb(59, 130, 59)
+}
+
+.mission .box .card .products_text p{
+    color: rgb(38, 38, 39);
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+
+/* Services */
+.service{
+    width: 100%;
+    height: 150vh;
+    /* padding: 25px 0; */
+}
+
+.service h1{
+    /* margin: 35px 0; */
+    text-shadow: 2px 2px 5px white;
+    color: rgb(59, 130, 59);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(8, 66, 8),rgb(86, 227, 190));
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    
+}
+
+.service .box{
+    width: 90%;
+    margin: 40px 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 20vh;
+}
+
+.service .box .card{
+    width: 290px;
+    /* height: 340px; */
+    box-shadow: 0 0 8px skyblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+    opacity: 80%;
+}
+
+.service .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.service .box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.service .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service .box .card .image img{
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.service .box .card:hover .image img{
+    transform: scale(1.1);
+}
+
+.service .box .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+    color: rgb(59, 130, 59);
+}
+
+.service .box .card .products_text p{
+    color: rgb(38, 38, 39);
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.service .shop_now_btn{
+    color: white;
+    /* background: #c72092; */
+    background: linear-gradient(to right,lightgreen,green);
+    position: relative;
+    top: 0%;
+    left: 45%;
+    /* transform: translate(-50%, -50%); */
+    /* transform: scale(5); */
+    padding: 10px 25px;
+    /* border: 5px solid #c72092; */
+    text-decoration: none;
+    box-shadow: 0 0 8px lightblue;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.service .shop_now_btn:hover{
+    /* border: 10px solid transparent; */
+    background: linear-gradient(to left,lightgreen,green);
+    /* color: rgb(63, 63, 63); */
+}
+
+
+/* Footer */
+footer{
+    width: 100%;
+}
+
+footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+    text-align: center;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: green;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+footer .footer_main .tag a i:hover{
+    color: #c72092;
+}
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color: white;
+}
+
+footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092, #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+}

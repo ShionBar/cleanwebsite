@@ -1,0 +1,72 @@
+body{
+	margin:0;
+	padding: 0;
+	min-height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bg{
+	background:url(../Reservation/image/cleaning-background.jpg) repeat;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background-size: cover; 
+	filter: blur(5px);
+	z-index: -1;
+	opacity: 0.7;
+	filter: brightness(50%);
+}
+.terms-box{
+	max-width: 800px;
+	background-color: rgba(b3, b3, b3, 0.1);
+	color:#fff;
+	font-family: sans-serif;
+	padding: 0 20px;
+	height: 550px;
+	overflow-y: auto;
+	font-size: 16px;		
+}
+::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: green;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: pink;
+
+}
+.terms-text h2{
+	text-transform: uppercase;
+    color: white;
+}
+.terms-text h4{
+	font-size: 16px;
+    color: white;
+	/* text-align: left; */
+	/* padding: 0 40px; */
+}
+
+.terms-text p{
+    color: white;
+}
+
+.terms-text button{
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;	
+}
+.terms-text button:hover{
+	background-color: gray;
+	transform:scale(1.05);
+}
+.terms-text button:active{
+	transform:scale(0.95);
+}
