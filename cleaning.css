@@ -346,11 +346,11 @@ section .main .social_icon i:hover{
 .service{
     width: 100%;
     height: 150vh;
-    /* padding: 25px 0; */
+    padding: 25px 0;
 }
 
 .service h1{
-    /* margin: 35px 0; */
+    margin: 35px 0;
     text-shadow: 2px 2px 5px white;
     color: rgb(59, 130, 59);
     font-size: 60px;
@@ -362,6 +362,16 @@ section .main .social_icon i:hover{
     -webkit-background-clip: text;
     /* -webkit-text-fill-color: transparent; */
     
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin: 10px 0;
+    padding: 10px;
 }
 
 .service .box{
